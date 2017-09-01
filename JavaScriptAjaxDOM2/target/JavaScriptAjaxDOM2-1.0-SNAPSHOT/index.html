@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--CDN Polyfills which should allow you to use fetch/promises from IE and older browsers -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+    </head>
+    <body>
+        <h1>JavaScriptAjaxDOM</h1>
+
+        <input type="button" id ="bt" onclick = "changeBlue()" value= "click event"/><br /><br />
+        <div id="div"></div><br />
+
+        <div id="joke"></div><br />
+        <div id="div2"></div><br />
+
+        <form method="POST">
+            <input type="text" id="fname" />
+            <input type="text" id="lname" />
+            <input type="button" id="newPerson" value="Create User" onclick="addUser()"/>
+            <div id ="persons"></div>
+        </form>
+        <script src="JavaScriptAjaxDOM.js"></script>
+    </body>
+</html>
