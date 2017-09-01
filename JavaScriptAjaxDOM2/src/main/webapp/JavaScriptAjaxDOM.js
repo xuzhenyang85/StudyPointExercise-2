@@ -9,7 +9,7 @@ function displayDate() {
 
 var div2 = document.getElementById("div2");
 div2.innerHTML = "Content to be replaced";
-var url = "http://localhost:8084/JavaScriptAjaxDOM2/text";
+var url = "http://localhost:8084/JavaScriptAjaxDOM2/api/persons";
 var conf = {method: 'get'};
 var promise = fetch(url, conf);
 promise.then(function (response) {

@@ -79,6 +79,7 @@ console.log("-------------------------");
 
 var names = ["Lars","Jan","Peter","Bo","Frederik"];
 
+
 function arrFilter (arr, callback){
     var resultArray = [];
     for( var i = 0; i < arr.length; i++){
@@ -104,8 +105,9 @@ var mapArr =names2.map(function(e){
     var start = "<li>";
     var end = "</li>"
     return start.concat(e).concat(end);
+    //return "<li>" + e "</li>"; result is the same
 });
-var mapAryJoin = mapArr.join("");
+var mapAryJoin = mapArr.join(" ");
 
 var start2 = "<ul>";
 var end2 = "</ul>";
